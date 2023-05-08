@@ -1,0 +1,117 @@
+body {
+    background-color: #e9e6e6;
+}
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin: 50px auto;
+    background-image: linear-gradient(135deg, #daf6ff 0, #d6f1ff 7.14%, #d3ecf8 14.29%, #d0e6ed 21.43%, #cedee3 28.57%, #cdd6d7 35.71%, #cbcccd 42.86%, #c9c2c2 50%, #c7b8b9 57.14%, #c4aeb2 64.29%, #c0a5ad 71.43%, #bd9eaa 78.57%, #b897a8 85.71%, #b392a8 92.86%, #ad8ea8 100%);
+    box-shadow: -6px -7px 11px 2px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: -6px -7px 11px 2px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: -6px -7px 11px 2px rgba(0,0,0,0.75) inset;
+}
+  
+  .calculator input {
+    grid-column: 1 / span 4;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: right;
+    box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.78) inset;
+-webkit-box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.78) inset;
+-moz-box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.78) inset;
+}
+
+  .numeros {
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #eee;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+}
+
+.operaciones {
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(127, 196, 199);
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+}
+
+#off {
+    background-color: rgb(204, 80, 80);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+}
+
+#off:hover {
+    background-color: rgb(243, 7, 7);
+}
+
+#off:active {
+    background-color: rgb(177, 13, 13)
+}
+
+#on {
+    background-color: rgb(18, 207, 81);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+}
+
+#on:hover {
+    background-color: rgb(64, 247, 125);
+}
+
+#on:active {
+    background-color: rgb(4, 153, 4)
+}
+
+.operaciones:hover {
+    background-color: rgb(151, 205, 206);
+}
+  
+  .operaciones:active {
+    background-color: rgb(32, 103, 105);
+}
+
+.numeros:hover {
+    background-color: #ccc;
+}
+
+.numeros:active {
+    background-color: rgb(88, 84, 84);
+}
+  
+input.off {
+    background-color: rgb(90, 88, 88);
+    color: #fff;
+  }
+  
+  input.on {
+    background-color: #fff;
+    color: #333;
+  }

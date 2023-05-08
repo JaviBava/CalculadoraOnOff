@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="screen" disabled>
+        <button id="on" onclick="turnOn()">ON</button>
+        <button class="operaciones" onclick="clearScreen()">C</button>
+        <button class="operaciones" onclick="backspace()">←</button>
+        <button class="operaciones" onclick="addToScreen('/')">÷</button>
+        <button class="numeros" onclick="addToScreen('1')">1</button>
+        <button class="numeros" onclick="addToScreen('2')">2</button>
+        <button class="numeros" onclick="addToScreen('3')">3</button>
+        <button class="operaciones" onclick="addToScreen('*')">x</button>
+        <button class="numeros" onclick="addToScreen('4')">4</button>
+        <button class="numeros" onclick="addToScreen('5')">5</button>
+        <button class="numeros" onclick="addToScreen('6')">6</button>
+        <button class="operaciones" onclick="addToScreen('-')">-</button>
+        <button class="numeros" onclick="addToScreen('7')">7</button>
+        <button class="numeros" onclick="addToScreen('8')">8</button>
+        <button class="numeros" onclick="addToScreen('9')">9</button>
+        <button class="operaciones" onclick="addToScreen('+')">+</button>
+        <button class="operaciones" onclick="addToScreen('.')">.</button>
+        <button class="numeros" onclick="addToScreen('0')">0</button>
+        <button class="operaciones" onclick="calculate()">=</button>
+        <button id="off" onclick="turnOff()">OFF</button>
+    </div>      
+
+<script src="js/main.js"></script>
+</body>
+</html>
